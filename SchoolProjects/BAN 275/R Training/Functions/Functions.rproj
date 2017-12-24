@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="RTarget" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4ab3f945-6df0-4d89-8564-fbe577a29b16}</ProjectGuid>
+    <AssemblyName>Functions</AssemblyName>
+    <Name>Functions</Name>
+    <RootNamespace>Functions</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="All functions.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="C.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="D.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Odd Stuff.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="W.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="func1.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="func2.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="RvsS.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scope.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Script.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="sim.reg.R">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Target Name="RTarget">
+    <Message Text="Executing R script" />
+  </Target>
+</Project>
